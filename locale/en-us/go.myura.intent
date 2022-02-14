@@ -1,6 +1,6 @@
-Robot go forward 1 meter
-Robot go to start
-Robot go to refrigerator
-Robot go to door
-Robot go to table
-Robot go forward five meters
+go forward 1 meter
+go to start
+go to refrigerator
+go to door
+go to table
+go forward five meters
