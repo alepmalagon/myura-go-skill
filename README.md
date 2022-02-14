@@ -5,12 +5,12 @@ Move myura robotic platform around
 Myura is a wheeled robotics platform that can now be bossed around with mycroft
 
 ## Examples
-* "Myura go forward 1 meter"
-* "Myura go to start"
-* "Myura go to refrigerator"
-* "Myura go to door"
-* "Myura go to table"
-* "Myura go forward five meters"
+* "go forward 1 meter"
+* "go to start"
+* "go to refrigerator"
+* "go to door"
+* "go to table"
+* "go forward five meters"
 
 ## Credits
 Alejandro Perez Malagon
