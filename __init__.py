@@ -1,6 +1,7 @@
 from adapt.intent import IntentBuilder
 from mycroft import MycroftSkill, intent_handler
 import requests
+import json
 
 class MyuraGo(MycroftSkill):
     def __init__(self):
