@@ -4,3 +4,6 @@ go to refrigerator
 go to door
 go to table
 go forward five meters
+move to the refrigerator
+move to the table
+move to the door
