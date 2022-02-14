@@ -1,4 +1,4 @@
-# <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/vacuum-robot.svg" card_color="#FF0000" width="50" height="50" style="vertical-align:bottom"/> Myura Go
+# <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/rotate.svg" card_color="#FF0000" width="50" height="50" style="vertical-align:bottom"/> Myura Go
 Move myura robotic platform around
 
 ## About
