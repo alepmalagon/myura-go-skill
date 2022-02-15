@@ -9,10 +9,10 @@ class MyuraGo(MycroftSkill):
 
     @intent_handler(IntentBuilder('GoIntent').require('GoKeyword'))
     def handle_go_myura(self, message):
-        #myura_url = self.settings.get('myura_url')
+        myura_url = self.settings.get('myura_url')
         payload = json.dumps({'target':[1,0,6], 'planner': False})
         self.speak_dialog('GoMyura')
-        requests.post('http://10.42.0.146:5000/goto', data = payload)
+        requests.post(myura_url+'/goto', data = payload)
 
 
 def create_skill():
