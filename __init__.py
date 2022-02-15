@@ -31,8 +31,8 @@ class MyuraGo(MycroftSkill):
         utterance = message.data.get('utterance')
         first, *middle, last = utterance.split()
         r = requests.get(myura_url+'/landmarks')
-
-        destination = r[last]
+        rjson = r.json()
+        destination = rjson[last]
 
         if not destination:
             self.speak_dialog("I don't know that place")
