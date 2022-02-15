@@ -1,9 +1,5 @@
-go forward 1 meter
-go to start
-go to refrigerator
-go to door
-go to table
+go forward one meter
 go forward five meters
-move to the refrigerator
-move to the table
-move to the door
+go backwards six meters
+go left three meters
+go right half a meter
