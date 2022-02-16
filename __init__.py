@@ -30,7 +30,7 @@ class MyuraGo(MycroftSkill):
 
         utterance = message.data.get('utterance')
         first, *middle, last = utterance.split()
-        if last=="start":
+        if last!="start":
             r = requests.get(myura_url+'/landmarks')
             rjson = r.json()
             destination = rjson[last]
