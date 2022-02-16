@@ -38,7 +38,7 @@ class MyuraGo(MycroftSkill):
             self.speak_dialog("I don't know that place")
             return
 
-        coords = destination['geometry']['coordinates'][0]
+        coords = destination['geometry']['coordinates'][0][0]
         coords.append(10)
 
         payload = json.dumps({'target':coords[:3], 'planner': False})
