@@ -30,17 +30,19 @@ class MyuraGo(MycroftSkill):
 
         utterance = message.data.get('utterance')
         first, *middle, last = utterance.split()
-        r = requests.get(myura_url+'/landmarks')
-        rjson = r.json()
-        destination = rjson[last]
+        if last=="start":
+            r = requests.get(myura_url+'/landmarks')
+            rjson = r.json()
+            destination = rjson[last]
 
-        if not destination:
-            self.speak_dialog("I don't know that place")
-            return
+            if not destination:
+                self.speak_dialog("I don't know that place")
+                return
 
-        coords = destination['geometry']['coordinates'][0][0]
-        coords.append(10)
-
+            coords = destination['geometry']['coordinates'][0][0]
+            coords.append(10)
+        else:
+            coords = [0,0,10]
         payload = json.dumps({'target':coords[:3], 'planner': False})
         self.speak_dialog('GoMyura')
         requests.post(myura_url+'/goto', data = payload)
