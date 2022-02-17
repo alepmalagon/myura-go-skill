@@ -62,7 +62,7 @@ class MyuraGo(MycroftSkill):
         if 'forward' in words:
             angle = 0.0;
         elif 'backwards' in words:
-            angle = 2*math.pi;
+            angle = math.pi;
         elif 'left' in words:
             angle = 3/2*math.pi;
         elif 'right' in words:
