@@ -2,15 +2,17 @@
 Move myura robotic platform around
 
 ## About
-Myura is a wheeled robotics platform that can now be bossed around with mycroft
+Myura is a wheeled robotics platform that can now be bossed around with mycroft. It runs on PyForce/Rosie. Check it, its awesome: https://github.com/PyForce/rosie
 
 ## Examples
-* "go forward 1 meter"
-* "go to start"
-* "go to refrigerator"
-* "go to door"
-* "go to table"
-* "go forward five meters"
+* "go forward one meter"
+* "mova to start"
+* "move to refrigerator"
+* "move to door"
+* "move to table"
+* "go left half meter"
+* "relocate at one and two"
+
 
 ## Credits
 Alejandro Perez Malagon
